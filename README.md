@@ -10,6 +10,7 @@ This project aims to predict wine ratings using machine learning models and fine
 4. [Project Structure](#project-structure)
 5. [Data](#data)
 6. [Results](#results)
+7. [Key Takeaways](#key-takeaways)
 
 ---
 
@@ -88,7 +89,7 @@ Here’s an overview of the project structure:
 
 ## Results
 
-    # Performance Comparison Table:
+    **Performance Comparison Table:**
 
 | Model                          | Average Error | RMSLE  | Hit Rate |
 |--------------------------------|---------------|--------|----------|
@@ -103,4 +104,10 @@ Here’s an overview of the project structure:
 | GPT-4o Frontier (Pre-Trained)  | 2.00          | 0.03   | 16.1%    |
 | Fine-Tuned GPT-4o-Mini         | 1.34          | 0.02   | 27.6%    |
 | LLaMA 3.2 (via Ollama)         | 3.90          | 0.05   | 5.3%     |
-    
+
+## Key Takeaways:
+
+- **Best Performing Model**: The **Random Forest Regression model with Word2Vec features** achieved the lowest average error (**1.38**) and the highest hit rate (**47.1%**).
+- **Fine-Tuning Impact**: Fine-tuning the **GPT-4o-Mini** model significantly improved its performance, reducing the average error from **2.03** to **1.34** and increasing the hit rate from **14.3%** to **27.6%**.
+- **Local Model Performance**: The **LLaMA 3.2** model performed worse than the fine-tuned GPT-4o-mini, indicating that local models may require additional optimization or fine-tuning for this task.
+- **Gradio App**: The integration of the fine-tuned GPT-4o-mini model with Gradio provides a user-friendly interface for real-time wine rating predictions and recommendations.
