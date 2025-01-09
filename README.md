@@ -70,7 +70,6 @@ wine-project/
 │ └── gradio_interface.py
 ├── requirements.txt
 └── README.md
-![image](https://github.com/user-attachments/assets/1b0fcf0a-dc39-4954-9dfe-d1800ab02fff)
 
 ## Data
 
