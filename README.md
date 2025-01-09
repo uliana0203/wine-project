@@ -46,7 +46,7 @@ The goal of this project is to predict wine ratings based on descriptions and ot
 ## Usage
 
 1. Data Preprocessing
-    Run the data preprocessing script to clean and prepare the dataset, if your want train your own model:
+    Run the data preprocessing script to clean and prepare the dataset if your want to train your own model:
 
     ```bash
     python scripts/preprocessor.py
@@ -59,10 +59,6 @@ The goal of this project is to predict wine ratings based on descriptions and ot
 ## Project Structure
 Here’s an overview of the project structure:
 
-- **data/**
-  - `test_wine.pkl`: Test dataset in pickle format.
-  - `train_wine.pkl`: Training dataset in pickle format.
- 
 - **notebooks/**
   - `EDA wine dataset.ipynb`: Notebook for exploratory data analysis (EDA).
   - `test_models.ipynb`: Notebook for testing different statistical models.
@@ -108,4 +104,4 @@ Here’s an overview of the project structure:
 - **Best Performing Model**: The **Random Forest Regression model with Word2Vec features** achieved the lowest average error (**1.38**) and the highest hit rate (**47.1%**).
 - **Fine-Tuning Impact**: Fine-tuning the **GPT-4o-Mini** model significantly improved its performance, reducing the average error from **2.03** to **1.34** and increasing the hit rate from **14.3%** to **27.6%**.
 - **Local Model Performance**: The **LLaMA 3.2** model performed worse than the fine-tuned GPT-4o-mini, indicating that local models may require additional optimization or fine-tuning for this task.
-- **Gradio App**: The integration of the fine-tuned GPT-4o-mini model with Gradio provides a user-friendly interface for real-time wine rating predictions and recommendations.
+- **Gradio App**: Integrating the fine-tuned GPT-4o-mini model with Gradio provides a user-friendly interface for real-time wine rating predictions and recommendations.
