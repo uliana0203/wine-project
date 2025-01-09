@@ -1,0 +1,12 @@
+openai
+gradio
+pandas
+scikit-learn
+datasets
+python-dotenv
+numpy
+pandas
+datasets
+sklearn
+huggingface_hub 
+pickle
