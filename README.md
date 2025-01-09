@@ -56,20 +56,27 @@ The goal of this project is to predict wine ratings based on descriptions and ot
     python scripts/gradio_interface.py
 
 ## Project Structure
-wine-project/
-├── data/
-│   ├── test_wine.pkl
-│   └── train_wine.pkl
-├── notebooks/
-│   ├── EDA wine dataset.ipynb
-│   ├── lim_integration.ipynb
-│   └── test_models.ipynb
-├── scripts/
-│   ├── preprocessor.py
-│   ├── model.py
-│   └── gradio_interface.py
-├── requirements.txt
-└── README.md
+Here’s an overview of the project structure:
+
+- **data/**
+  - `test_wine.pkl`: Test dataset in pickle format.
+  - `train_wine.pkl`: Training dataset in pickle format.
+ 
+- **notebooks/**
+  - `EDA wine dataset.ipynb`: Notebook for exploratory data analysis (EDA).
+  - `test_models.ipynb`: Notebook for testing different statistical models.
+  - `lim_integration.ipynb`: Notebook for LLM integration and testing.
+  
+- **scripts/**
+  - `preprocessor.py`: Script for data preprocessing.
+  - `model.py`: Script with load the model.
+  - `gradio_interface.py`: Script for the Gradio app interface.
+
+- **requirements.txt**: List of Python dependencies.
+
+- **README.md**: This file.
+
+---
 
 ## Data
 
