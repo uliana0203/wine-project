@@ -58,16 +58,16 @@ The goal of this project is to predict wine ratings based on descriptions and ot
 ## Project Structure
 wine-project/
 ├── data/
-│ ├── test_wine.pkl
-│ └── train_wine.pkl
+│   ├── test_wine.pkl
+│   └── train_wine.pkl
 ├── notebooks/
-│ ├── EDA wine dataset.ipynb
-│ ├── lim_integration.ipynb
-│ └── test_models.ipynb
+│   ├── EDA wine dataset.ipynb
+│   ├── lim_integration.ipynb
+│   └── test_models.ipynb
 ├── scripts/
-│ ├── preprocessor.py
-│ ├── model.py
-│ └── gradio_interface.py
+│   ├── preprocessor.py
+│   ├── model.py
+│   └── gradio_interface.py
 ├── requirements.txt
 └── README.md
 
