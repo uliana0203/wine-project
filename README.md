@@ -89,8 +89,6 @@ Here’s an overview of the project structure:
 
 ## Results
 
-    **Performance Comparison Table:**
-
 | Model                          | Average Error | RMSLE  | Hit Rate |
 |--------------------------------|---------------|--------|----------|
 | Random Rating Predictor        | 5.36          | 0.07   | 4.7%     |
