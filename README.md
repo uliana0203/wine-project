@@ -16,11 +16,22 @@ This project aims to predict wine ratings using machine learning models and fine
 
 ## Project Overview
 
-The goal of this project is to predict wine ratings based on descriptions and other features. The project includes:
+The goal is to predict wine ratings (85–100 scale) from textual descriptions and structured features.
 
-- **Data Preprocessing**: Cleaning and preparing the wine dataset for modeling.
-- **Model Training**: Training various machine learning models, including linear regression, random forests, and fine-tuned language models.
-- **Gradio Interface**: An interactive web interface for predicting wine ratings and suggesting similar wines.
+### Data Preprocessing
+- **Dataset merging**: combined train, validation, and test splits from `alfredodeza/wine-ratings` into a single DataFrame
+- **Missing value imputation**: filled missing `variety` labels using a `RandomForestClassifier` pipeline with `OneHotEncoder` on `region` and `notes` fields
+- **Feature extraction**: extracted `country_state` from the `region` column and `year` from wine names using regex
+- **Text cleaning**: normalized wine description text by removing special characters and collapsing whitespace
+- **Prompt engineering**: structured cleaned data into natural-language prompts for LLM fine-tuning
+
+### Models
+- **Baselines**: Random Rating Predictor, Constant Rating Predictor
+- **Classical ML**: Linear Regression (structured features), Bag-of-Words + Linear Regression, Word2Vec + Linear Regression, Word2Vec + SVR, Word2Vec + Random Forest
+- **LLMs**: GPT-4o-Mini (pre-trained), GPT-4o Frontier (pre-trained), Fine-Tuned GPT-4o-Mini, LLaMA 3.2 (via Ollama)
+
+### Gradio Interface
+An interactive web app powered by the fine-tuned GPT-4o-mini model for real-time wine rating predictions and similar wine recommendations.
 
 ---
 
@@ -57,7 +68,7 @@ The goal of this project is to predict wine ratings based on descriptions and ot
     python scripts/gradio_interface.py
 
 ## Project Structure
-Here’s an overview of the project structure:
+HereвЂ™s an overview of the project structure:
 
 - **notebooks/**
   - `EDA wine dataset.ipynb`: Notebook for exploratory data analysis (EDA).
